@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(spacing: 20.0) {
+            ForEach(sampleGaugesData()) { data in
+                GaugeRow(gaugeData: data)
+            }
+        }
+        .padding()
     }
 }
 

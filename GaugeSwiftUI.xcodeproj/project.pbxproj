@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C27D45F527D2254400C80E94 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D45F427D2254400C80E94 /* GaugeView.swift */; };
+		C27D45F727D226F200C80E94 /* GaugeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D45F627D226F200C80E94 /* GaugeRow.swift */; };
+		C27D45F927D22E3300C80E94 /* GaugeBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D45F827D22E3300C80E94 /* GaugeBackgroundView.swift */; };
 		C2F8B8B227D22524001D5E67 /* GaugeSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8B8B127D22524001D5E67 /* GaugeSwiftUIApp.swift */; };
 		C2F8B8B427D22524001D5E67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8B8B327D22524001D5E67 /* ContentView.swift */; };
 		C2F8B8B627D22525001D5E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F8B8B527D22525001D5E67 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C27D45F427D2254400C80E94 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+		C27D45F627D226F200C80E94 /* GaugeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeRow.swift; sourceTree = "<group>"; };
+		C27D45F827D22E3300C80E94 /* GaugeBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeBackgroundView.swift; sourceTree = "<group>"; };
 		C2F8B8AE27D22524001D5E67 /* GaugeSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaugeSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F8B8B127D22524001D5E67 /* GaugeSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeSwiftUIApp.swift; sourceTree = "<group>"; };
 		C2F8B8B327D22524001D5E67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +59,9 @@
 			children = (
 				C2F8B8B127D22524001D5E67 /* GaugeSwiftUIApp.swift */,
 				C2F8B8B327D22524001D5E67 /* ContentView.swift */,
+				C27D45F627D226F200C80E94 /* GaugeRow.swift */,
+				C27D45F427D2254400C80E94 /* GaugeView.swift */,
+				C27D45F827D22E3300C80E94 /* GaugeBackgroundView.swift */,
 				C2F8B8B527D22525001D5E67 /* Assets.xcassets */,
 				C2F8B8B727D22525001D5E67 /* Preview Content */,
 			);
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F8B8B427D22524001D5E67 /* ContentView.swift in Sources */,
+				C27D45F927D22E3300C80E94 /* GaugeBackgroundView.swift in Sources */,
+				C27D45F527D2254400C80E94 /* GaugeView.swift in Sources */,
+				C27D45F727D226F200C80E94 /* GaugeRow.swift in Sources */,
 				C2F8B8B227D22524001D5E67 /* GaugeSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
