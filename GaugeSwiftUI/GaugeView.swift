@@ -30,15 +30,35 @@ struct GaugeView: View {
         return offset
     }
     
+    var startPoint: UnitPoint {
+        let offset = (0 - gaugeData.minimunTrackValue) / (gaugeData.maximimTrackValue - gaugeData.minimunTrackValue)
+        return UnitPoint(
+            x: offset,
+            y: 0.5
+        )
+    }
+    
+    var endPoint: UnitPoint {
+        let offset = (35 - gaugeData.minimunTrackValue) / (gaugeData.maximimTrackValue - gaugeData.minimunTrackValue)
+        return UnitPoint(
+            x: offset,
+            y: 0.5
+        )
+    }
+    
+    var colors: [Color] {
+        [.cyan, .teal, .yellow, .orange, .red]
+    }
+    
     var body: some View {
         GeometryReader { proxy in
             ZStack(alignment: .leading) {
                 Capsule()
                     .fill(
                         LinearGradient(
-                            colors: [.yellow, .orange],
-                            startPoint: .leading,
-                            endPoint: .trailing
+                            colors: colors,
+                            startPoint: startPoint,
+                            endPoint: endPoint
                         )
                     )
                     .frame(height: 10.0)
