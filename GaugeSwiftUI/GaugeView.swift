@@ -50,6 +50,10 @@ struct GaugeView: View {
         [.cyan, .teal, .yellow, .orange, .red]
     }
     
+    var GAUGE_HEIGHT: CGFloat {
+        10.0
+    }
+    
     var body: some View {
         GeometryReader { proxy in
             ZStack(alignment: .leading) {
@@ -61,16 +65,21 @@ struct GaugeView: View {
                             endPoint: endPoint
                         )
                     )
-                    .frame(height: 10.0)
+                    .frame(height: GAUGE_HEIGHT)
                 if let value = gaugeData.value {
                     Circle()
-                        .fill(.white)
-                        .frame(width: 7.0, height: 7.0)
-                        .offset(x: (proxy.size.width - 10) * offset(for: value))
+                        .strokeBorder(Color.white.opacity(0.4), lineWidth: 2.0)
+                        .overlay(
+                            Circle()
+                                .fill(Color.white)
+                                .padding(2.0)
+                        )
+                        .frame(width: GAUGE_HEIGHT, height: GAUGE_HEIGHT)
+                        .offset(x: (proxy.size.width - GAUGE_HEIGHT) * offset(for: value))
                 }
             }
         }
-        .frame(height: 10.0)
+        .frame(height: GAUGE_HEIGHT)
     }
     
 }
