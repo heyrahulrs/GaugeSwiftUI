@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C24C4E2327D3445E00EBF753 /* GaugeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C4E2227D3445E00EBF753 /* GaugeData.swift */; };
 		C27D45F527D2254400C80E94 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D45F427D2254400C80E94 /* GaugeView.swift */; };
 		C27D45F727D226F200C80E94 /* GaugeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D45F627D226F200C80E94 /* GaugeRow.swift */; };
 		C27D45F927D22E3300C80E94 /* GaugeBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D45F827D22E3300C80E94 /* GaugeBackgroundView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C24C4E2227D3445E00EBF753 /* GaugeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeData.swift; sourceTree = "<group>"; };
 		C27D45F427D2254400C80E94 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
 		C27D45F627D226F200C80E94 /* GaugeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeRow.swift; sourceTree = "<group>"; };
 		C27D45F827D22E3300C80E94 /* GaugeBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeBackgroundView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C24C4E2027D3444500EBF753 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2F8B8B327D22524001D5E67 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C24C4E2127D3444F00EBF753 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				C27D45F627D226F200C80E94 /* GaugeRow.swift */,
+				C27D45F427D2254400C80E94 /* GaugeView.swift */,
+				C27D45F827D22E3300C80E94 /* GaugeBackgroundView.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		C24C4E2427D344BA00EBF753 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C24C4E2227D3445E00EBF753 /* GaugeData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C2F8B8A527D22524001D5E67 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				C2F8B8B127D22524001D5E67 /* GaugeSwiftUIApp.swift */,
-				C2F8B8B327D22524001D5E67 /* ContentView.swift */,
-				C27D45F627D226F200C80E94 /* GaugeRow.swift */,
-				C27D45F427D2254400C80E94 /* GaugeView.swift */,
-				C27D45F827D22E3300C80E94 /* GaugeBackgroundView.swift */,
+				C24C4E2427D344BA00EBF753 /* Model */,
+				C24C4E2027D3444500EBF753 /* View */,
+				C24C4E2127D3444F00EBF753 /* Supporting Views */,
 				C2F8B8B527D22525001D5E67 /* Assets.xcassets */,
 				C2F8B8B727D22525001D5E67 /* Preview Content */,
 			);
@@ -149,6 +176,7 @@
 				C2F8B8B427D22524001D5E67 /* ContentView.swift in Sources */,
 				C27D45F927D22E3300C80E94 /* GaugeBackgroundView.swift in Sources */,
 				C27D45F527D2254400C80E94 /* GaugeView.swift in Sources */,
+				C24C4E2327D3445E00EBF753 /* GaugeData.swift in Sources */,
 				C27D45F727D226F200C80E94 /* GaugeRow.swift in Sources */,
 				C2F8B8B227D22524001D5E67 /* GaugeSwiftUIApp.swift in Sources */,
 			);
