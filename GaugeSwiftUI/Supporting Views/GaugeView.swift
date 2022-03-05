@@ -12,6 +12,8 @@ struct GaugeView: View {
     var gaugeData: GaugeData
     
     func offset(for value: CGFloat) -> CGFloat {
+        if value < gaugeData.minimunTrackValue { return 0 }
+        if value > gaugeData.maximimTrackValue { return 1 }
         let offset = (value - gaugeData.minimunTrackValue) / (gaugeData.maximimTrackValue - gaugeData.minimunTrackValue)
         return offset
     }
@@ -73,5 +75,6 @@ struct GaugeView: View {
 struct GaugeView_Previews: PreviewProvider {
     static var previews: some View {
         GaugeView(gaugeData: sampleGaugeData)
+            .padding()
     }
 }
